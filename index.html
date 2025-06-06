@@ -5,50 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Name - Personal Website</title>
   <style>
-    body {
-      font-family: Georgia, serif;
-      color: #333;
-      background-color: #f9f9f9;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
+    :root {
+      --primary-color: #333;
+      --accent-color: #2a7ae2;
+      --bg-color: #ffffff;
+      --muted-color: #666;
+      --font-family: 'Helvetica Neue', Arial, sans-serif;
     }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      color: var(--primary-color);
+      background: var(--bg-color);
+      line-height: 1.6;
+    }
+
     header {
-      background: #004080;
+      background: var(--accent-color);
       color: #fff;
-      padding: 1em 2em;
+      padding: 2em 1em;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.5em;
+      font-weight: 400;
     }
+
+    header p {
+      margin: 0.5em 0 0;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2em auto;
       padding: 0 1em;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     section {
       margin-bottom: 2em;
     }
+
     h2 {
-      color: #004080;
+      font-size: 1.5em;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.3em;
       margin-top: 1em;
     }
+
+    p {
+      margin: 0.5em 0 1em;
+    }
+
     footer {
       text-align: center;
       padding: 1em;
+      color: var(--muted-color);
       font-size: 0.9em;
-      color: #777;
+      border-top: 1px solid #ddd;
     }
+
     a {
-      color: #004080;
+      color: var(--accent-color);
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
     }
   </style>
 </head>
@@ -56,42 +91,45 @@
 
 <header>
   <h1>Your Name</h1>
-  <p>Researcher | Scholar | Lifelong Learner</p>
+  <p>Researcher | Academic | [Your field or interest]</p>
 </header>
 
 <main>
   <section>
-    <h2>About Me</h2>
+    <h2>About</h2>
     <p>
-      Hello! I’m a researcher specializing in [your field]. My work explores [brief research interests/overview]. This website features my current and past projects, papers, and thoughts.
+      I’m a researcher focused on [your field or expertise]. I explore [brief explanation or theme], and I’m passionate about sharing insights and collaborating with others.
     </p>
   </section>
 
   <section>
-    <h2>Research Projects</h2>
-    <h3>Project Title 1</h3>
+    <h2>Research Interests</h2>
     <p>
-      A brief description of your first project. What was the question? What methods? Key findings?
+      My work centers on:
     </p>
-
-    <h3>Project Title 2</h3>
-    <p>
-      Another project overview—this template is flexible enough for you to add as much text as you need.
-    </p>
-  </section>
-
-  <section>
-    <h2>Publications</h2>
     <ul>
-      <li><strong>Article Title 1</strong> – Journal Name, Year</li>
-      <li><strong>Article Title 2</strong> – Journal Name, Year</li>
+      <li>Topic 1: A brief description</li>
+      <li>Topic 2: Another area of interest</li>
+      <li>Topic 3: Additional focus or question</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Current Projects</h2>
+    <h3>Project One</h3>
+    <p>
+      A short paragraph outlining the goals and progress of this project.
+    </p>
+    <h3>Project Two</h3>
+    <p>
+      Another brief paragraph explaining this project’s significance and current stage.
+    </p>
   </section>
 
   <section>
     <h2>Contact</h2>
     <p>
-      You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a> or follow me on <a href="https://github.com/kylall77">GitHub</a>.
+      Feel free to reach out via <a href="mailto:your.email@example.com">email</a> or connect with me on <a href="https://github.com/kylall77">GitHub</a>.
     </p>
   </section>
 </main>
